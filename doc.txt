@@ -1,0 +1,53 @@
+------ API DOCUMENTATION -------
+ADD QUESTIONS
+api:
+    http://localhost/WEB APPLICATIONS/brainybattle/CONTROLLERS/add_question.php
+parameters:
+    question -> String
+    answer -> Array of Strings e.g., ['option1', 'option2', 'option3']
+    correct_answer -> Int e.g., 0 or 1
+    level_id -> Int, level for the subject you want to upload to
+    subject_id -> Int, takes the subject id
+protocol:
+    POST
+
+GET QUESTIONS AND ANSWERS
+ api:
+    http://localhost/WEB APPLICATIONS/brainybattle/CONTROLLERS/get_questions.php
+parameters:
+    level_id -> Int
+    subject_id -> Int
+protocol:
+    GET
+
+CREATE SUBJECTS
+api:
+   http://localhost/WEB APPLICATIONS/brainybattle/CONTROLLERS/create_subject.php
+parameters:
+    subject_name -> String
+protocol:
+    POST
+
+EDIT SUBJECTS
+api:
+   http://localhost/WEB APPLICATIONS/brainybattle/CONTROLLERS/edit_subject.php 
+parameters:
+    edit_id -> Int
+    edited_subject -> String
+protocol:
+    POST
+
+
+GET LEVELS
+api:
+    http://localhost/WEB APPLICATIONS/brainybattle/CONTROLLERS/get_level.php
+parameters:
+    subject_id -> Int
+protocol:
+    GET
+CREATE LEVELS FOR EACH subject
+GET SUBJECTS
+api:
+    http://localhost/WEB APPLICATIONS/brainybattle/CONTROLLERS/get_subjects.php
+protocol:
+    GET
